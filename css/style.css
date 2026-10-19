@@ -1,0 +1,257 @@
+/* header section */
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header .header-caption h1{
+    font-size: 60px;
+}
+
+header .header-caption span{
+    font-size: 30px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* navbar section */
+
+.navbar .nav-item{
+    position: relative;
+}
+.dropdown-menu li{
+    position: relative;
+}
+.dropdown-menu .dropdown-menu{
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: none;
+}
+.navbar .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+
+}
+.navbar .nav-item:hover::after{
+    width: 90%;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%; 
+  margin-top: -1px;
+  display: none;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* about section */
+
+section{
+    padding-top: 100px;
+}
+
+.list-unstyled span{
+    font-weight: bold;
+} 
+
+#about h2{
+    position: relative;
+}
+
+#about h2::after{
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    top: 40px;
+    left: 0;
+} 
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* services section */
+
+#services .card .circle{
+    width: 100px;
+    height: 100px;
+    border: 8px solid blue ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 1s;
+}  
+
+ #services .card:hover .circle{
+    background-color: blue;
+    color: #fff;
+    border: 8px solid rgb(211, 211, 214) ;
+}   
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* start the work section  */
+#work{
+    height: 400px;
+    margin: 40px 0px;
+     background-image: linear-gradient(rgba(4, 88, 182, 0.6),rgb(4, 88, 182)),url(../images/post-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.counter-icon .icon-circal{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+} 
+@media (max-width:956px){
+    #work{
+        height: fit-content;
+    }
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* start the blog section  */
+#blog{
+    height: auto;
+    padding-bottom: 50px;
+}
+.container .title-blog{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ .hr{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.card-item img{
+    transition:all 0.5s;
+}
+.card-item img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card-item .title-card{
+       padding: 2rem 3% 1rem 4%;
+}
+@media (max-width:956px){
+    #blog{
+    height: fit-content;
+    margin-bottom: 40px;
+}
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* start the rev section  and the Contact  */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#rev , #contact-home{
+    height:610px;
+    /* margin: 40px 0px; */
+    background-image: linear-gradient(rgba(76, 158, 243,0.6),rgba(4, 87, 182, 0.376)),url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+#rev h3 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+#rev p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+/* start the drop section  */
+#drop-home{
+    height:100vh;
+}
+.title-card .card-img{
+    height: 32px;
+    width: 32px;
+    margin: 0px 4px;
+}
+.title-card a h4:hover , .title-card a span:hover{
+    color: #0078ff;
+}
+@media (max-width:1024px){
+    #drop-home{
+    height: fit-content;
+}
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+/* start the footer section  */
+#contact-home{
+    height:100vh;
+}
+#contact-home .box{
+    margin-top: 30px;
+}
+#contact-home .box .hr{
+    width: 80px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#contact-home p{
+    font-weight: 300 ;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.list-ico span {
+    color: #0078ff;
+    margin-right: 10px;
+}
+.socials {
+    padding: 1.5rem 0;
+}
+.socials ul li {
+    display: inline-block;
+    
+}
+.socials a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.socials a:hover{
+    color: #0078ff;
+}
